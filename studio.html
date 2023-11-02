@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="space.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <nav>
+        <div class="icon">Accent Furniture</div>
+        <div class="search-box">
+        <input type="search" placeholder="Search products...">
+        <button type="submit"><i class="fa fa-search" aria-hidden="true" id="searchbtn"></i></button>
+        </div>
+        <ul>
+            <li><a href="studio.html">home</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="team.html">about us</a></li>
+            <li><a href="login.html">login</a></li>
+        </ul>
+        <label for="" class="bar">
+            <i class="fa fa-bars" aria-hidden="true" id="bars"></i>
+            <i class="fa fa-clock-o" aria-hidden="true" id="times"></i>
+        </label>
+    </nav>
+    <div class="down-nav">
+        <div class="down-links">
+            <a href="#" id="down-space">Living</a>
+            <a href="#" id="down-space">Dining</a>
+            <a href="#" id="down-space">Bedroom</a>
+            <a href="#" id="down-space">Kitchen</a>
+        </div>
+    </div>
+    <div class="main">
+       <img class="slide-show" src="logback-edited.jpg">
+       <img class="slide-show"src="main-image.jpg">
+       <img class="slide-show" src="beds-img.webp">
+       <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+       <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+    <h2 id="new-arrivals">New Arrivals</h2>
+    <div class="upper-block">
+        <div class="block-one">
+           
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-col">
+                 <h3>Company</h3>
+                    <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+             <div class="footer-col">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Bedroom</a></li>
+                    <li><a href="#">Dining</a></li>
+                    <li><a href="#">Kitchen</a></li>
+                    <li><a href="#">Outdoors</a></li>    
+                </ul>
+             </div>
+             <div class="footer-col">
+                <h3>Get Help</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+             </div>
+
+             <div class="footer-col">
+                <h3>Follow Us</h3>
+                <div class="social-media">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    </footer>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("slide-show");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+</body>
+</html>

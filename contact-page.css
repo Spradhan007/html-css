@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.heading{
+    text-align: center;
+    margin-top: 130px;
+    margin-bottom: 40px;
+    
+}
+.heading h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    padding-bottom: 3px;
+}
+.heading h1::after{
+    content:'';
+    background: #333;
+    display: block;
+    height: 3px;
+    width: 200px;
+    margin: 10px auto;
+}
+.container{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 50px;
+}
+.address{
+    margin-right: 150px;
+}
+.address i{
+    font-size: 100px;
+}
+.phone{
+    margin-right: 150px;
+}
+.phone i{
+    font-size: 100px;
+}
+.email{
+    margin-right: 150px;
+}
+.email i{
+    font-size: 100px;
+}
+h3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+h2:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+

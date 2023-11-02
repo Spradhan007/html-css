@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab 5</title>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+        h1{
+            text-align: center;
+        }
+        #change{
+            background-color: red;
+            border: 1px none;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Event handling</h1>
+<button onclick="fun1()">OnClick Event</button>
+<p id="Onevent"></p>
+<p id="change"></p>
+Enter your name: <input type="text" name="txt" placeholder="Enter name and hit enter"  onchange="fun2(this.value)">
+<script>
+function fun1() {
+  document.getElementById("Onevent").innerHTML = "I am span";
+}
+function fun2(val) {
+    document.getElementById("change").innerHTML = "Hello World";
+}
+</script>
+
+</body>
+</html>
